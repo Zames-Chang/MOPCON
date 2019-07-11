@@ -20,6 +20,13 @@ If you discover a security vulnerability within Lumen, please send an e-mail to 
 
 php -S localhost:3000 -t public
 
+## facebook api 
+"https://graph.facebook.com/{your-page-id}/feed
+    ?fields=is_eligible_for_promotion,promotable_id
+            &access_token={your-page-access-token}"
+
+url 602218626874063/feed?fields=full_picture,message,id,created_time
+
 ## License
 
 The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
