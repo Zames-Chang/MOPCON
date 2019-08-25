@@ -14,8 +14,8 @@ class UnconfControllerTest extends TestCase
         /** assert **/
         $this->assertEquals(true, $result['success']);
         if($env == 'develop'){
-            $this->assertTrue(array_key_exists('10/19', $result['data']));
-            $this->assertTrue(array_key_exists('10/20', $result['data']));
+            $this->assertTrue(array_key_exists('1571414400', $result['data']));
+            $this->assertTrue(array_key_exists('1571500800', $result['data']));
         }
     }
     public function provider()
