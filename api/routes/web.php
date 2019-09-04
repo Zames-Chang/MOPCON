@@ -37,6 +37,8 @@ $router->group(['prefix' => 'api'], function ($router) {
         });
         $router->group(['prefix' => 'unconf'], function ($router) {
             $router->get('/', 'UnconfController@index');
+            $router->get('/list', 'UnconfController@getUnconfList');
+            $router->get('/{id}', 'UnconfController@show');
         });
         $router->group(['prefix' => 'session'], function ($router) {
             $router->get('/', 'SessionController@index');
